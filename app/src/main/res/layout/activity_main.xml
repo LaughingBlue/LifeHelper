@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="tw.bluelab.lifehelper.MainActivity"
+    android:weightSum="1"
+    android:background="#30d8ea">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:text="MAIN MENU"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp"
+            android:focusableInTouchMode="false"
+            android:textColor="#0a8b11"
+            android:gravity="center_horizontal"
+            android:layout_weight="0.27" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="139dp"
+                android:layout_height="wrap_content"
+                android:text="新增飲食紀錄"
+                android:id="@+id/btn_newRecord"
+                android:textSize="20dp"
+                android:layout_weight="0.51"
+                android:onClick="btn_newRecord_Click" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.18"
+            android:gravity="center_horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="觀看紀錄"
+                android:id="@+id/btn_view"
+                android:textSize="20dp"
+                android:layout_weight="0.59"
+                android:onClick="btn_view_Click" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="結束程式"
+                android:id="@+id/btn_exit"
+                android:textSize="20dp"
+                android:onClick="btn_exit_Click" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
